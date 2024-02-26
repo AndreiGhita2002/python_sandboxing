@@ -1,5 +1,9 @@
-
+from volume import evaluation
 
 if __name__ == '__main__':
-    print('Hello world!')
+    with open('volume/input.txt', 'r') as f:
+        data = f.read()
 
+    output = evaluation.evaluation(data)
+
+    print(output)
